@@ -1,5 +1,16 @@
 <div class="container">
     <div class="top-bar">
+        <!-- more -->
+        <button
+            class="top-bar__more d-none d-lg-block js-toggle"
+            toggle-target="#navbar"
+        >
+            <img
+                src="./assets/icons/more.svg"
+                alt=""
+                class="icon top-bar__more-icon"
+            />
+        </button>
         <!-- Logo -->
         <a href="./" class="logo">
             <img
@@ -10,9 +21,16 @@
             <h1 class="logo__title">Grocerymart</h1>
         </a>
         <!-- navbar -->
-        <div class="navbar">
+        <nav id="navbar" class="navbar">
+            <button
+                class="navbar__close-btn d-none d-lg-block js-toggle"
+                toggle-target="#navbar"
+            >
+                <img src="./assets/icons/back.svg" alt="" />
+            </button>
+
             <ul class="navbar__list">
-                <li>
+                <li class="navbar__item">
                     <a href="#" class="navbar__link">
                         Departments
                         <img
@@ -22,7 +40,7 @@
                         />
                     </a>
                 </li>
-                <li>
+                <li class="navbar__item">
                     <a href="#" class="navbar__link"
                         >Grocery<img
                             src="./assets/icons/arrow-down.svg"
@@ -31,7 +49,7 @@
                         />
                     </a>
                 </li>
-                <li>
+                <li class="navbar__item">
                     <a href="#" class="navbar__link"
                         >Beauty
                         <img
@@ -42,7 +60,8 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </nav>
+        <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
         <!-- action -->
         <div class="top-act">
             <div class="top-act__group top-act__group--single">
